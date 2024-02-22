@@ -1,0 +1,12 @@
+body{
+  background-color: plum;
+  padding: 50px 100px;
+}
+
+.box{
+  width: 90px;
+  height: 90px;
+  color: white;
+  background-color: purple;
+  margin: 10px;
+}
