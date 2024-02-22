@@ -4,19 +4,21 @@ const conteinerBox = document.getElementById('conteiner');
 
 const numElconteinerBox = 100;
 
-for(let i = 0; i <= numElconteinerBox; i++){
+for(let i = 1; i <= numElconteinerBox; i++){
 
   const boxJ = document.createElement('div');
   boxJ.innerHTML = `${i}`
   boxJ.classList.add('box')
   conteinerBox.append(boxJ);
 
-  if(i % 3 === 0 ) {
-    boxJ.innerHTML = 'Fizz'
+  if(i % 15 === 0 ) {
+    boxJ.innerHTML = 'FizzBuzz'
+    boxJ.classList = 'fucsia'
   }else if (i % 5 === 0) {
     boxJ.innerHTML = 'Buzz'
-  }else if (i % 30 === 0 ) {
-    boxJ.innerHTML = 'FizzBuzz'
+    boxJ.classList = 'yellow'
+  }else if (i % 3 === 0 ) {
+    boxJ.innerHTML = 'Fizz'
   }else {
     boxJ.innerHTML = `${i}`
   };
