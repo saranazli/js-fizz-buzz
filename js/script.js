@@ -19,6 +19,7 @@ for(let i = 1; i <= numElconteinerBox; i++){
     boxJ.classList = 'yellow'
   }else if (i % 3 === 0 ) {
     boxJ.innerHTML = 'Fizz'
+    boxJ.classList = 'white'
   }else {
     boxJ.innerHTML = `${i}`
   };
